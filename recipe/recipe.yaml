@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.1.0"
+  version: "0.2.0"
   python_min: "3.12"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/n/nwesdap/nwesdap-${{ version }}.tar.gz
-  sha256: 0f68a7c50627057e018bc242262fc3dab9971000d9517a37f5eb965ea405ffbc
+  sha256: 1ad877651289cc26af095d66be8d7d567781510e9974ff83937a512ada93fdfd
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - pandas >=3.0.6,<4
+    - pandas >=3,<4
     - pooch >=1.9.0,<2
 
 tests:
